@@ -1,15 +1,12 @@
-﻿#include <conio.h>
-#include <iostream>
+﻿#include <iostream>
 #include <fstream>
-#include <stdio.h>
-#include <windows.h>
 
 using namespace std;
 
 #define N 6
 
 int read_matrix(int matr[N][N]) {
-	ifstream in("C:\\Users\\olegs\\lab3dm\\Lab_3\\Lab_3\\2.txt");
+	ifstream in("2.txt");
 	if (in.is_open())
 	{
 		for (int i = 0; i < N; i++)
@@ -109,9 +106,7 @@ int output(int matr[N][N], int path[N]) {
 
 int main()
 {
-	SetConsoleCP(1251); 
-    SetConsoleOutputCP(1251); 
-    std::cout << "Павло Мельник КН-409" << std::endl; 
+    std::cout << "Андрій Романюк КН-409" << std::endl;
 
 	setlocale(LC_ALL, "Ukrainian");
 	int matr[N][N];
